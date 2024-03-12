@@ -1,0 +1,141 @@
+.title{
+    text-align: center;
+}
+
+header {
+    text-align: center;
+    background-image: linear-gradient(black, rgb(124, 124, 124));
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    border-bottom: 3px solid black;
+    margin: -20px;
+    color: white;
+}
+
+#navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px 0;
+}
+
+#navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: x-large;
+}
+
+#navbar a:hover{
+    color: rgb(24, 184, 122);
+}
+
+.image{
+    padding-top: 200px;
+}
+.image div{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 3rem;
+    grid-column-gap: 2rem;
+}
+
+form {
+    width: 60%;
+    margin: 50px auto;
+    border: 5px solid #000000;
+    border-radius: 30px;
+}
+
+fieldset {
+    border: none;
+    padding: 30px 25px;
+    border-bottom: 3px solid #3b3b4f;
+}
+
+fieldset:last-of-type {
+    border-bottom: none;
+}  
+
+label{
+    display: block;
+    font-weight: bold;
+    font-size: large;}
+
+label[for="terms"]{
+    padding-bottom: 8px;
+}
+
+input[type="text"], input[type="password"]{
+    display: block;
+    width: 50%;
+    padding: 8px;
+    margin-top: 5px;
+}
+
+#submit {
+    background-color: #000000;
+    color: #fff;
+    padding: 10px 20px;
+    border: 2px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#submit:hover {
+    background-color: white;
+    color: black;
+    border-radius: 50px;
+    transition: all 0.3s ease 0s;
+}
+
+table{margin: 70px auto;
+    width: 80%;
+    border-collapse: collapse;}
+
+th, td {
+    border: 1px solid black;
+    padding: 10px;
+    }
+
+th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-image: linear-gradient(black, rgb(119, 119, 119));
+    color: white;
+    }
+
+tr:hover {background-color: #ddd;}
+
+tr:nth-child(even){background-color: #f2f2f2;}
+
+.audio-video{text-align: center;}
+
+.audio-video article{margin: 50px;}
+
+audio {width: 40%;}
+
+#Contacts{
+    border-top: 5px solid black;
+}
+
+#Contacts div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#Contacts div a{
+    display: inline-block;
+    text-decoration: none;
+    font-size: larger;
+    color: black;
+    margin: 50px 40px;
+  }
+
+  
+#Contacts a:hover {
+    transform: translateY(-10px); 
+}

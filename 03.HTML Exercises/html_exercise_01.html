@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <link rel="stylesheet" href="styles.css">
+    
+    <title>HTML Exercises</title>
+</head>
+<body>
+ 
+    <header>
+    <div><h1>HTML Exercises</h1></div>
+    <nav id="navbar">
+        <ul> 
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#Aboutus">About Us</a></li>
+            <li><a href="#Contacts">Contacts</a></li> 
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">More</a>
+                <div class="dropdown-content">          
+                    <a href="#Image">Image</a>
+                    <a href="#Form">Form</a>
+                    <a href="#Table">Table</a>
+                    <a href="#Audio">Audio</a>
+                    <a href="#Video">Video</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    </header>
+
+    <section id="Home">
+        <h2>Web Application</h2>
+    </section>
+
+    <section class="image" id="Image">
+    <h2 class="title">Images</h2>
+    <div>
+    <figure>
+        <img src="https://helpx.adobe.com/content/dam/help/en/photoshop/using/convert-color-image-black-white/jcr_content/main-pars/before_and_after/image-before/Landscape-Color.jpg" alt="Mt. Fiji" width="500" height="250" style="border: 5px solid black;">
+        <figcaption>One of the beatiful places in Japan, is the famous <b>Mt. Fiji</b>.</figcaption>
+    </figure>
+    <figure>
+        <img src="https://www.w3schools.com/w3css/img_lights.jpg" alt="Aurora Borealis" width="500" height="250" style="border: 5px solid black;">
+        <figcaption><cite>Aurora borealis</cite> also known as Northern Lights, can be found in latitudes between 60 and 75.</figcaption>
+    </figure>
+    <figure>
+        <img src="https://d38b044pevnwc9.cloudfront.net/cutout-nuxt/enhancer/2.jpg" alt="Eiffel Tower" width="500" height="250" style="border: 5px solid black;">
+        <figcaption>As France's symbol in the world, and the showcase of Paris, the <i>Eiffel Tower</i></figcaption>
+    </figure>
+    <figure>
+        <img src="https://graylinelasvegas.com/wp-content/uploads/2023/02/top-attractions-to-see-at-the-grand-canyon.jpg" alt="Grand top-attractions-to-see-at-the-grand-canyon" width="500" height="250" style="border: 5px solid black;">
+        <figcaption><cite>Grand Canyon</cite> National Park, in Arizona, is home to much of the immense Grand Canyon.</figcaption>
+    </figure>
+    <figure>
+        <img src="https://www.studentuniverse.com/blog/wp-content/uploads/2014/04/Santorini-Greece.jpg" alt=" Santorini" width="500" height="250" style="border: 5px solid black;">
+        <figcaption><strong>Santorini</strong> is an island in the southern Aegean Sea, southeast of Greece’s mainland.</figcaption>
+    </figure>
+    <figure>
+        <img src="https://www.travelandleisure.com/thmb/jgn7RnmqTSqD8He8KRfFkMNT2lI=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/TAL-sao-miguel-azores-BEAUTEURO0323-b4d103db5f2940e6b33afa15268e99b0.jpg" alt="Sao Miguel" width="500" height="250" style="border: 5px solid black;">
+        <figcaption>Nicknamed the "Hawaii of Europe," <cite>São Miguel</cite>, the volcanic main island in the Azores archipelago.</figcaption>
+    </figure>
+    </div>
+    </section>
+
+    <section class="form" id="Form">
+    <h2 class="title">Form</h2>
+    <form>
+        <fieldset> 
+            <label for="name">Name: <input id="name" name="name" type="text" required placeholder="Write your full name(Lastname, Firstname)"></label><br>
+            <label for="new-password">Create Password: <input id="new-password" name="new-password" type="password" pattern="[a-z0-9]{8,}" minlength="8" required placeholder="Create Password(From a-z and 0-9)"></label><br>
+            <label for="email">Email: <input id="email" name="email" type="email" required placeholder="Enter email(example@gmail.com)"></label><br>
+            <label for="birthday">Birthday: <input type="date" id="birthday" name="birthday" min="1920-01-01" max="2024-02-01"></label><br>
+            <label>Gender:</label>
+            <label for="male"><input id="male" type="radio" name="gender" class="inline" required> Male</label>
+            <label for="female"><input id="female" type="radio" name="gender" class="inline" required> Female</label>
+        </fieldset>
+        <fieldset>
+            <label><i>"Terms and Conditions: The following terminology applies to these Terms and Conditions, Privacy Statement and Disclaimer Notice and all Agreements: “Client”, “You” and “Your” refers to you, the person log on this website and compliant to the Company's terms and conditions. “The Company”, “Ourselves”, “We”, “Our” and “Us”, refers to our Company. “Party”, “Parties”, or “Us”, refers to both the Client and ourselves. All terms refer to the offer, acceptance and consideration of payment necessary to undertake the process of our assistance to the Client in the most appropriate manner for the express purpose of meeting the Client's needs in respect of provision of the Company's stated services, in accordance with and subject to, prevailing law of Netherlands. Any use of the above terminology or other words in the singular, plural, capitalization and/or he/she or they, are taken as interchangeable and therefore as referring to same."</i></label><br>
+            <label for="terms-and-condition"><input type="checkbox" id="terms-and-condition" value="terms-and-condition" name="terms-and-condition" required>Agree to terms and conditions</label><br>
+            <input type="submit" id="submit" value="Submit">
+        </fieldset>  
+    </form>
+    </section>
+
+    <section class="table" id="Table">
+    <h2 class="title">Table</h2>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Address</th>
+                <th>Age</th>
+            </tr>
+            <tr>
+                <td>Daniel Padilla</td>
+                <td>Quezon City</td>
+                <td>28</td>
+            </tr>
+            <tr>
+                <td>Kathryn Bernardo</td>
+                <td>Cabanatuan</td>
+                <td>27</td>
+            </tr>
+            <tr>
+                <td>Kim Chiu</td>
+                <td>Tagaytay</td>
+                <td>33</td>
+            </tr>
+            <tr>
+                <td>Xian Lim </td>
+                <td>Bulacan</td>
+                <td>34</td>
+            </tr>
+            <tr>
+                <td>Bruno Mars</td>
+                <td>New York</td>
+                <td>38</td>
+            </tr>
+          </table>
+        </section>
+
+        <section class="audio-video" >
+          <h2 class="title">Audio and Video</h2>
+            <article id="Audio">
+            <h3>Embedded Audio</h3>
+                <p>Click to Play Music !!!</p>
+                <audio controls src="Rroll.mp3">Your browser does not support the audio element.</audio>
+            </article>
+            <article id="Video">
+            <h3>Embedded Video</h3>
+                <p>Click to Play Video !!!</p>
+                <video controls src="rickroll.mp4">Your browser does not support the video tag.</video>
+            </article>
+        </section>
+
+        <section id="Map">
+            <h2 class="title">Google Maps</h2>
+            <div class="gmap">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30618.13763908678!2d120.5746715347656!3d16.41125030000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3391a16838a88859%3A0x5422131c1a349c54!2sLake%20Dr%2C%20Baguio%2C%20Benguet%2C%20Philippines!5e0!3m2!1sen!2sgi!4v1706772160896!5m2!1sen!2sgi" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </article>
+        </section> 
+
+        <section id="Twitter">
+            <h2 class="title">Twitter</h2>
+            <div class="tweet">
+                <blockquote class="twitter-tweet"><p lang="en" dir="ltr">At dawn from the gateway to Mars, the launch of Starship’s second flight test <a href="https://t.co/ffKnsVKwG4">pic.twitter.com/ffKnsVKwG4</a></p>&mdash; SpaceX (@SpaceX) <a href="https://twitter.com/SpaceX/status/1732824684683784516?ref_src=twsrc%5Etfw">December 7, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js"></script>
+            </article>
+        </section>
+
+        <section id="JS">
+        <h2 class="title">Sample JAVASCRIPT</h2>
+
+          <div class="calculator">
+            <input type="text" id="calc" disabled>
+          </div>
+        
+          <div class="calculator">
+            <button onclick="appendToDisplay('1')">1</button>
+            <button onclick="appendToDisplay('2')">2</button>
+            <button onclick="appendToDisplay('3')">3</button>
+            <button onclick="appendToDisplay('+')">+</button>
+          </div>
+        
+          <div class="calculator">
+            <button onclick="appendToDisplay('4')">4</button>
+            <button onclick="appendToDisplay('5')">5</button>   
+            <button onclick="appendToDisplay('6')">6</button>
+            <button onclick="appendToDisplay('-')">-</button>
+          </div>
+        
+          <div class="calculator">
+            <button onclick="appendToDisplay('7')">7</button>
+            <button onclick="appendToDisplay('8')">8</button>
+            <button onclick="appendToDisplay('9')">9</button>
+            <button onclick="appendToDisplay('*')">*</button>
+          </div>
+        
+          <div class="calculator">
+            <button onclick="appendToDisplay('0')">0</button>
+            <button onclick="clearDisplay()">C</button>
+            <button onclick="calculateResult()">=</button>
+            <button onclick="appendToDisplay('/')">/</button>
+          </div>
+
+          <script src="index.js"></script>  
+    </section>
+
+    <section>
+        <h2>Formatting Tags</h2>
+            <section>
+                <h2>Examples</h2>
+                <address>
+                    Written by: John Doe<br>
+                    Contact: <a href="mailto:john@example.com">example@gmail.com</a>
+                </address>
+                <p><em>Welcome</em> to this article about HTML formatting tags</p>
+                <blockquote>
+                    <p><q>HTML is the foundation of the web.</q></p>
+                    <cite>- John Doe</cite>
+                </blockquote>
+                <ul>
+                    <li><b>Bold</b></li>
+                    <li><i>Italic</i></li>
+                    <li><u>Underline</u></li>
+                    <li><del>Strikethrough</del></li>
+                    <li><sup>Superscript</sup></li>
+                    <li><sub>Subscript</sub></li>
+                    <li><mark>Highlighted</mark></li>
+                    <li><abbr title="World Wide Web Consortium">W3C</abbr></li>
+                    <li><code>&lt;code&gt;</code></li>
+                    <li><kbd>Keyboard Input</kbd></li>
+                    <li><samp>Sample Output</samp></li>
+                    <li><var>Variable Text</var></li>
+                    <li><dfn>Definition</dfn></li>
+                    <li><cite>Citation</cite></li>
+                    <li><time datetime="2024-02-06">February 6, 2024</time></li>
+                    <li><s>Strikethrough Text</s></li>
+                    <li><small>Small Text</small></li>
+                    <li><mark>Highlighted Text</mark></li>
+                    <li><meter value="5" min="0" max="10">5 out of 10</meter></li>
+                    <li><progress value="70" max="100">70%</progress></li>
+                    <li><pre>Preformatted Text
+                    Line 1
+                    Line 2</pre></li>
+                    <li><q>Quoted Text</q></li>
+                    <li><samp>Sample Output</samp></li>
+                    <li><strong>Strong Text</strong></li>
+                    <li><template>Template Content</template></li>
+                    <li><wbr>Word Break Opportunity<br>Here</li>
+                </ul>
+            </section>
+    </section>
+
+        <section id="Aboutus">
+            <h2>About us</h2>
+            <p>Welcome to our websites, where innovation meets sustainability. We believe in harnessing the power of technology to create a positive impact on the 
+                planet. Our mission is to provide cutting-edge solutions that not only meet the needs of today but also contribute to a greener and more sustainable future.</p>
+
+        </section>
+
+        <section id="Contacts">
+            <h2 class="title">Contact Information</h2>
+                <div>
+                  <a target="_blank" href="https://www.facebook.com/shean.vicente">
+                    <i class="fab fa-facebook fa-1x"></i>
+                    Facebook
+                  </a><br>
+                  <a id="profile-link" target="_blank" href="https://github.com/naesh94">
+                    <i class="fab fa-github fa-1x"></i>
+                    Github
+                  </a><br>
+                  <a target="_blank" href="https://twitter.com/X">
+                    <i class="fab fa-twitter fa-1x"></i>
+                    Twitter
+                  </a><br>
+                  <a href="#">
+                    <i class="fas fa-envelope-open-text fa-1x"></i>
+                    Mail
+                  </a><br>
+                  <a href="#">
+                    <i class="fas fa-phone fa-1x"></i>
+                    Call Me
+                  </a>
+                </div>
+        </section>
+    <footer>
+        <p style="text-align: right; font-size: 14px; border-top: solid 1px black;">© 2024 Jerrviz Vicente. All right reserved. University of the Cordilleras.</p>
+    </footer>   
+
+</body>
+</html>

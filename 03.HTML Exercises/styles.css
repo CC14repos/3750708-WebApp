@@ -1,0 +1,227 @@
+.title{
+    text-align: center;
+}
+
+header{
+    text-align: center;
+    background-color: black;
+    width: 101%;
+    z-index: 1;
+    border-bottom: 3px solid black;
+    margin: -20px;
+    color: white;
+    position: fixed;
+    display: flex;
+    height: 80px;
+}
+
+header div{width: 20%;}
+
+#navbar{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 50px;
+}
+
+#navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+}
+
+#navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: x-large;
+    padding-left: 20px;
+}
+
+#navbar a:hover{
+    color: rgb(24, 184, 122);
+}
+
+#Home{
+    background-image: linear-gradient(black, rgb(124, 124, 124));
+    background-size: auto;
+    color: white;
+    height: 30rem;
+    margin: 0 -10px 0 -10px;
+
+}
+
+#Home h2{
+    padding: 50px 0 0 60px;
+    font-size: 5rem;
+}
+
+li .dropdown {
+    display: inline-block;
+  }
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #aaaaaa;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+.dropdown-content a:hover {background-color: #f1f1f1;}
+  
+.dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+#Home, #Image, #Form, #Table, #Audio, #Video{
+    padding-top: 50px;
+}
+.image div{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 3rem;
+    grid-column-gap: 2rem;
+}
+
+form {
+    width: 60%;
+    margin: 50px auto;
+    border: 5px solid #000000;
+    border-radius: 30px;
+}
+
+fieldset {
+    border: none;
+    padding: 30px 25px;
+    border-bottom: 3px solid #3b3b4f;
+}
+
+fieldset:last-of-type {
+    border-bottom: none;
+}  
+
+label{
+    display: block;
+    font-weight: bold;
+    font-size: large;}
+
+label[for="terms"]{
+    padding-bottom: 8px;
+}
+
+input[type="text"], input[type="password"]
+, input[type="email"], input[type="date"]{
+    display: block;
+    width: 50%;
+    padding: 8px;
+    margin-top: 5px;
+}
+
+#submit {
+    background-color: #000000;
+    color: #fff;
+    padding: 10px 20px;
+    border: 2px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#submit:hover {
+    background-color: white;
+    color: black;
+    border-radius: 50px;
+    transition: all 0.3s ease 0s;
+}
+
+table{margin: 70px auto;
+    width: 80%;
+    border-collapse: collapse;}
+
+th, td {
+    border: 1px solid black;
+    padding: 10px;
+    }
+
+th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-image: linear-gradient(black, rgb(119, 119, 119));
+    color: white;
+    }
+
+tr:hover {background-color: #ddd;}
+
+tr:nth-child(even){background-color: #f2f2f2;}
+
+.audio-video{text-align: center;}
+
+.audio-video article{margin: 50px;}
+
+audio {width: 40%;}
+
+#Contacts{
+    border-top: 5px solid black;
+}
+
+#Contacts div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#Contacts div a{
+    display: inline-block;
+    text-decoration: none;
+    font-size: larger;
+    color: black;
+    margin: 50px 40px;
+  }
+
+  
+#Contacts a:hover {
+    transform: translateY(-10px); 
+}
+
+#Aboutus{text-align: center;
+    border-top: 5px solid black;}
+
+#Aboutus p{margin: 0 30% 3% 30%;}
+
+.gmap{display: flex;
+justify-content: center;}
+
+.tweet{
+    display: flex;
+    justify-content: center;
+}
+
+.calculator{
+    display: flex;
+    justify-content: center;
+}
+
+.calculator button{
+    width: 5%;
+    height: 5%;
+    font-size: 30px;
+}
+
+#calc{
+    width: 19%;
+    padding: 10px;
+    margin: 5px 0;
+    font-size: 30px ;
+  }

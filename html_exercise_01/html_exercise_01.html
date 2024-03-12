@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>HTML Exercises</title>
+</head>
+<body>
+    <header><h1>HTML Exercises</h1>
+    <h2>Links</h2>
+    <nav id="navbar">
+        <ul> 
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#Aboutus">About Us</a></li>
+            <li><a href="#Contacts">Contacts</a></li>  
+        </ul>
+    </nav>
+    </header>
+    
+    <section class="image" id="Home">
+    <h2 class="title">Images</h2>
+    <div>
+    <figure>
+        <img src="https://helpx.adobe.com/content/dam/help/en/photoshop/using/convert-color-image-black-white/jcr_content/main-pars/before_and_after/image-before/Landscape-Color.jpg" alt="Mt. Fiji" width="500" height="250" style="border: 5px solid black;">
+        <figcaption>One of the beatiful places in Japan, is the famous <b>Mt. Fiji</b>.</figcaption>
+    </figure>
+    <figure>
+        <img src="https://www.w3schools.com/w3css/img_lights.jpg" alt="Aurora Borealis" width="500" height="250" style="border: 5px solid black;">
+        <figcaption><strong>Aurora borealis</strong> also known as Northern Lights, can be found in latitudes between 60 and 75.</figcaption>
+    </figure>
+    <figure>
+        <img src="https://d38b044pevnwc9.cloudfront.net/cutout-nuxt/enhancer/2.jpg" alt="Eiffel Tower" width="500" height="250" style="border: 5px solid black;">
+        <figcaption>As France's symbol in the world, and the showcase of Paris, the <i>Eiffel Tower</i></figcaption>
+    </figure>
+    <figure>
+        <img src="https://graylinelasvegas.com/wp-content/uploads/2023/02/top-attractions-to-see-at-the-grand-canyon.jpg" alt="Grand top-attractions-to-see-at-the-grand-canyon" width="500" height="250" style="border: 5px solid black;">
+        <figcaption><b>Grand Canyon</b> National Park, in Arizona, is home to much of the immense Grand Canyon.</figcaption>
+    </figure>
+    <figure>
+        <img src="https://www.studentuniverse.com/blog/wp-content/uploads/2014/04/Santorini-Greece.jpg" alt=" Santorini" width="500" height="250" style="border: 5px solid black;">
+        <figcaption><strong>Santorini</strong> is an island in the southern Aegean Sea, southeast of Greece’s mainland.</figcaption>
+    </figure>
+    <figure>
+        <img src="https://www.travelandleisure.com/thmb/jgn7RnmqTSqD8He8KRfFkMNT2lI=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/TAL-sao-miguel-azores-BEAUTEURO0323-b4d103db5f2940e6b33afa15268e99b0.jpg" alt="Sao Miguel" width="500" height="250" style="border: 5px solid black;">
+        <figcaption>Nicknamed the "Hawaii of Europe," <i>São Miguel</i>, the volcanic main island in the Azores archipelago.</figcaption>
+    </figure>
+    </div>
+    </section>
+
+    <section class="form">
+    <h2 class="title">Form</h2>
+    <form>
+        <fieldset> 
+            <label for="name">Name: <input id="name" name="name" type="text" required placeholder="Write your full name(Lastname, Firstname)"></label><br>
+            <label for="new-password">Create Password: <input id="new-password" name="new-password" type="password" pattern="[a-z0-9]{8,}" minlength="8" required placeholder="Create Password(From a-z and 0-9)"></label><br>
+            <label>Gender:</label>
+            <label for="male"><input id="male" type="radio" name="gender" class="inline" required> Male</label>
+            <label for="female"><input id="female" type="radio" name="gender" class="inline" required> Female</label>
+        </fieldset>
+        <fieldset>
+            <label><i>"Terms and Conditions: The following terminology applies to these Terms and Conditions, Privacy Statement and Disclaimer Notice and all Agreements: “Client”, “You” and “Your” refers to you, the person log on this website and compliant to the Company's terms and conditions. “The Company”, “Ourselves”, “We”, “Our” and “Us”, refers to our Company. “Party”, “Parties”, or “Us”, refers to both the Client and ourselves. All terms refer to the offer, acceptance and consideration of payment necessary to undertake the process of our assistance to the Client in the most appropriate manner for the express purpose of meeting the Client's needs in respect of provision of the Company's stated services, in accordance with and subject to, prevailing law of Netherlands. Any use of the above terminology or other words in the singular, plural, capitalization and/or he/she or they, are taken as interchangeable and therefore as referring to same."</i></label><br>
+            <label for="terms-and-condition"><input type="checkbox" id="terms-and-condition" value="terms-and-condition" name="terms-and-condition" required>Agree to terms and conditions</label><br>
+            <input type="submit" id="submit" value="Submit">
+        </fieldset>  
+    </form>
+    </section>
+
+    <section class="table">
+    <h2 class="title">Table</h2>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Address</th>
+                <th>Age</th>
+            </tr>
+            <tr>
+                <td>Daniel Padilla</td>
+                <td>Quezon City</td>
+                <td>28</td>
+            </tr>
+            <tr>
+                <td>Kathryn Bernardo</td>
+                <td>Cabanatuan</td>
+                <td>27</td>
+            </tr>
+            <tr>
+                <td>Kim Chiu</td>
+                <td>Tagaytay</td>
+                <td>33</td>
+            </tr>
+            <tr>
+                <td>Xian Lim </td>
+                <td>Bulacan</td>
+                <td>34</td>
+            </tr>
+            <tr>
+                <td>Bruno Mars</td>
+                <td>New York</td>
+                <td>38</td>
+            </tr>
+          </table>
+        </section>
+
+        <section class="audio-video">
+          <h2 class="title">Audio and Video</h2>
+            <article>
+            <h3>Embedded Audio</h3>
+                <p>Click to Play Music !!!</p>
+                <audio controls src="Rroll.mp3">Your browser does not support the audio element.</audio>
+            </article>
+            <article>
+            <h3>Embedded Video</h3>
+                <p>Click to Play Video !!!</p>
+                <video controls src="rickroll.mp4">Your browser does not support the video tag.</video>
+            </article>
+        </section>
+
+        <section id="Contacts">
+            <h2 class="title">Contact Information</h2>
+                <div>
+                  <a target="_blank" href="https://www.facebook.com/shean.vicente">
+                    <i class="fab fa-facebook fa-1x"></i>
+                    Facebook
+                  </a><br>
+                  <a id="profile-link" target="_blank" href="https://github.com/naesh94">
+                    <i class="fab fa-github fa-1x"></i>
+                    Github
+                  </a><br>
+                  <a target="_blank" href="https://twitter.com/X">
+                    <i class="fab fa-twitter fa-1x"></i>
+                    Twitter
+                  </a><br>
+                  <a href="#">
+                    <i class="fas fa-envelope-open-text fa-1x"></i>
+                    Mail
+                  </a><br>
+                  <a href="#">
+                    <i class="fas fa-phone fa-1x"></i>
+                    Call Me
+                  </a>
+                </div>
+        </section>
+    <footer id="Aboutus">
+        <p style="text-align: right; font-size: 14px; border-top: solid 1px black;">© 2024 Jerrviz Vicente. All right reserved. University of the Cordilleras.</p>
+    </footer>
+</body>
+</html>
