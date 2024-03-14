@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classes</title>
+</head>
+
+<body>
+    <style type="text/css">
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #87CEEB; 
+        }
+
+        .bird {
+            width: 200px;
+            height: 200px;
+            position: relative;
+        }
+
+        .bird .body {
+            width: 120px;
+            height: 120px;
+            background-color: #FED55D; 
+            border-radius: 50%;
+            position: absolute;
+            top: 60px;
+            left: 40px;
+            border: 5px solid #F39C12; 
+        }
+
+        .bird .head {
+            width: 80px;
+            height: 80px;
+            background-color: #FAD7A0; 
+            border-radius: 50%;
+            position: absolute;
+            top: 20px;
+            left: 50px;
+            border: 5px solid #F39C12; 
+        }
+
+        .bird .eye {
+            width: 20px;
+            height: 20px;
+            background-color: white;
+            border-radius: 50%;
+            position: absolute;
+            top: 30px;
+            left: 30px;
+        }
+
+        .bird .pupil {
+            width: 10px;
+            height: 10px;
+            background-color: black;
+            border-radius: 50%;
+            position: absolute;
+            top: 5px;
+            left: 5px;
+        }
+
+        .bird .beak {
+            width: 0;
+            height: 0;
+            border-left: 20px solid transparent;
+            border-right: 20px solid transparent;
+            border-bottom: 30px solid #F39C12; 
+            position: absolute;
+            top: 40px;
+            left: 50px;
+            transform: rotate(30deg);
+        }
+
+        .bird .wing {
+            width: 140px;
+            height: 50px;
+            background-color: #FAD7A0; 
+            border-radius: 50%;
+            position: absolute;
+            top: 70px;
+            left: -20px;
+            transform: rotate(-20deg);
+            border: 5px solid #F39C12; 
+        }
+
+        .bird .leg {
+            width: 8px;
+            height: 50px;
+            background-color: #F1948A; 
+            position: absolute;
+            top: 160px;
+            left: 75px;
+            border-radius: 5px;
+            transform: rotate(10deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bird">
+        <div class="body"></div>
+        <div class="head">
+            <div class="eye">
+                <div class="pupil"></div>
+            </div>
+            <div class="beak"></div>
+        </div>
+        <div class="wing"></div>
+        <div class="leg"></div>
+    </div>
+</body>
+
+</html>
