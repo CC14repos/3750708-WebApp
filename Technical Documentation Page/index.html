@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="styles\styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Technical Documentation</title>
+</head>
+<body>
+  <nav id="navbar">
+    <header>Technical Documentation</header>
+    <a class="nav-link" href="#JavaScript">JavaScript</a>
+    <a class="nav-link" href="#HTML">HTML</a>
+    <a class="nav-link" href="#CSS">CSS</a>
+    <a class="nav-link" href="#Responsive_Design">Responsive Design</a>
+    <a class="nav-link" href="#Media_Queries">Media Queries</a>
+  </nav>
+  <main id="main-doc">
+    <section class="main-section" id="JavaScript">
+      <header class="header">JavaScript</header>
+      <p>JavaScript is a dynamic programming language that's used for web development, in web applications, for game development, and lots more. It allows you to implement 
+        dynamic features on web pages that cannot be done with only HTML and CSS.</p>
+      <code>console.log('Hello, world!');</code>
+      <p><b>Inline JavaScript</b><br><br>
+      Here, you have the JavaScript code in HTML tags in some special JS-based attributes.
+      For example, HTML tags have event attributes that allow you to execute some code inline when an event is triggered. Here's what I mean:</p>
+      <code><button onclick="alert('You just clicked a button')">Click me!</button></code>
+      <p><b>Data Types in JavaScript</b></p>
+      <p>In JavaScript, data has to be of one type or another. JavaScript needs to know this so that it knows how to use it with other data or how to operate on such data.
+
+        Here are the basic data types that JavaScript supports:</p>
+        <ul>
+          <li>Number (for example, 6, 7, 8.9): on which you can apply arithmetic operations (like addition) and many more</li>
+          <li>String (like "javascript", 'a long sentence', a short paragraph): anything found between single quotes ('...'), double quotes ("...") and backticks (...). 
+            There's no difference between single and double quotes, but backticks have more features, such as:</li>
+          <li>interpolating variables in strings, like so: My name is ${name}. name here is a variable, injected into the string.</li>
+          <li>multiline strings. With normal quotes, you'd need to add escape characters like \n for a newline, but backticks allow you to continue your string on another line, like so:</li>
+        </ul>
+      <code>let str = `I am a string`;</code>
+        <ul>
+          <li>Boolean (can only be of two values: true or false): more like yes (true) or no (false)</li>
+          <li>Array (for example, [1, 2, "hello", false]): a group of data (which can be of any type, including arrays) separated by a comma. Indexing starts from 0. 
+              Accessing the content of such a group can be like so: array[0], which for this example will return 1, since it's the first item.  </li>
+          <li>Object (for example {name: 'javascript', age: 5}): also a group of data but in the form of a key:value pair. The key has to be a string, and the value can be any type including another object. 
+            Accessing the content of the group is done with the key, for example obj.age or obj["age"] will return 5.</li>
+          <li>Undefined (the only data this type supports is undefined): This data can be assigned to a variable explicitly, or implicitly (by JavaScript) if a variable has been declared but not assigned a value. 
+            Later in this article, we'll look at variable declaration and value assignment.</li>
+          <li>Null (the only data this type supports is null): Null means there is no value. It holds a value, but not a real value – rather, null.</li>
+          <li>Function (for example, function(){ console.log("function") }): A function is a data type that invokes a block of code when called. More on functions later in this article.
+          </li>
+        </ul>
+
+        <p><b>Variables in JavaScript</b></p>
+        <p>Variables are containers for values of any data type. They hold values such that when the variables are used, JavaScript uses the value they represent for that operation.</p>
+        <code>let name;</code>
+        <p>For the above, name has been declared, but it doesn't have a value yet.
+          As you'd expect from the data types section, JavaScript automatically assigns a value of undefined to name. So if you try to use name anywhere, undefined will be used for that operation.</p>
+        <code>let name;<br>
+          name = "JavaScript";</code>
+        <p>Now if you use name, it will represent JavaScript.</p>
+        <code>let name = "JavaScript";</code>
+
+    </section>
+    <section class="main-section" id="HTML">
+      <header class="header">HTML</header>
+      
+      <p>HTML, or Hypertext Markup Language, is a markup language for the web that defines the structure of web pages.
+        It is one of the most basic building blocks of every website, so it's crucial to learn if you want to have a career in web development.</p>
+        <code>&lt;div class="container"&gt;</code>
+      <p><b>What is HTML?</b></p>
+      <p>To understand "HTML" from front to back, let's look at each word that makes up the abbreviation:</p>
+      <p>Hypertext: text (often with embeds such as images, too) that is organized in order to connect related items</p>
+      <p>Markup: a style guide for typesetting anything to be printed in hardcopy or soft copy format</p>
+      <p>Language: a language that a computer system understands and uses to interpret commands.</p>
+      <p>HTML determines the structure of web pages. This structure alone is not enough to make a web page look good and interactive. 
+        So you'll use assisted technologies such as CSS and JavaScript to make your HTML beautiful and add interactivity, respectively.</p>
+      <p>In this case, I like to break down the three technologies – HTML, CSS, and JavaScript – this way: they are like a human body.</p>
+        
+      <ul>
+        <li>HTML is the skeleton,</li>
+        <li>CSS is the skin,</li>
+        <li>and JavaScript is the circulatory, digestive, and respiratory systems that brings the structure and the skin to life.</li>
+      </ul>
+      
+      <p><b>HTML Tags</b></p>
+      <p>Since HTML defines the markup for a particular web page, you'll want the text, images, or other embeds to appear in certain ways.
+
+        For example, you might want some text to be big, other text to be small, and some to be bold, italic, or in bullet point form.
+        
+        HTML has "tags" that let you get this done. So, there are tags to create headings, paragraphs, bolded words, italicized words, and more.</p>
+      <code>&lt;p&gt;&lt;/p&gt;</code>    
+
+      <p><b>HTML Elements</b></p>
+      <p>An element consists of the opening tag, a character, the content, and a closing tag. Some elements are empty – that is, they don't have a closing tag but instead have a source or link to content that you want to embed on the web page.
+      An example of an empty element is <img>, which you use to embed images on a web page.
+      HTML elements are often used interchangeably with tags, but there's a small difference between the two. An element is a combination of the opening and closing tag, and then the content between them.</p>
+      <code>&lt;p&gt;Hello World&lt;/p&gt;</code>
+
+      <p><b>HTML Attributes</b></p>
+      <p>HTML tags also take what are called attributes. These attributes are placed in the opening tag and range from style and ids to classes. They take values, which convey more information about the element and help you do things such as styling and manipulation with JavaScript.
+
+        In the infographic below, the opening tag contains a class attribute with a value of “text”. This can be used to style the element or select it with JavaScript for interactivity.</p>
+
+      <code>&lt;p class="text"&gt;Hello World&lt;/p&gt;</code>
+
+      <p>Here's the anatomy of a basic HTML page:</p>
+
+      <code>&lt;!DOCTYPE html&gt;</code><br>
+      <code>&lt;html&gt;</code><br>
+      <code style="margin-left: 25px;">&lt;head&gt;</code><br>
+      <code style="margin-left: 50px;">&lt;meta charset="UTF-8"&gt;</code><br>
+      <code style="margin-left: 50px;">&lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;</code><br>
+      <code style="margin-left: 50px;">&lt;meta name="viewport" content="width=device-width, initial-scale=1.0" &gt;</code><br>
+      <code style="margin-left: 50px;">&lt;title&gt;Definition of HTML&lt;/title&gt;</code><br>
+      <code style="margin-left: 25px;">&lt;/head&gt;</code><br>
+      <code style="margin-left: 25px;">&lt;body&gt;</code><br>
+      <code style="margin-left: 25px;">&lt;/body&gt;</code><br>
+      <code>&lt;/html&gt;</code><br>
+
+      <p>Let's look at the important bits of code here:</p>
+      <ul>
+        <li>&lt;!Doctype html&gt;: Specifies that we're using HTML5 in this code. Before the introduction of HTML5, you had to explicitly state which version of HTML you were coding in with the &lt;!Doctype&gt; tag. For example, HTML4.0, 3.2, and so on. But now we no longer need it. When “html” is written in the code, the browser automatically assumes that you are coding in HTML5.</li>
+        <li>&lt;html&gt;&lt;/html&gt;: the root, or top-level element of every HTML document. Every other element must be wrapped in it.</li>
+        <li>&lt;head&gt;&lt;/head&gt;: one of the most crucial parts of the HTML document. Web crawlers look inside the head tags to get important information about the page. It contains info such as the page title, stylesheets, meta information for SEO, and lots more.</li>
+        <li>&lt;meta /&gt;: this is an empty element that conveys meta-information about the page. Such information may include the author, what type of encoding it's using (almost always UTF-8), responsiveness, compatibility, and a lot more. Web crawlers always look at the meta tag to get information about the web page, which will play a crucial role in SEO.</li>
+        <li>&lt;title&gt;&lt;/title&gt;: this defines the title of the web page. It is always shown in the browser tab.</li>
+        <li>&lt;body&gt;&lt;/body&gt;: all the content of the HTML document is located inside the body tag. There can only be one &lt;body&gt; tag on the whole page.</li>
+      </ul>
+
+    </section>
+    <section class="main-section" id="CSS">
+      <header class="header">CSS</header>
+      <p>CSS (Cascading Style Sheets) allows you to create great-looking web pages, but how does it work under the hood? This article explains what CSS is with a simple syntax example and also covers some key terms about the language.</p>
+      <p>However, the web would be a boring place if all websites looked like that. Using CSS, you can control exactly how HTML elements look in the browser, presenting your markup using whatever design you like.</p>
+      <p>CSS can be used for very basic document text styling — for example, for changing the color and size of headings and links. It can be used to create a layout — for example, turning a single column of text into a layout with a main content area and a sidebar for related information. It can even be used for effects such as animation. Have a look at the links in this paragraph for specific examples.</p>
+      <p><b>CSS Syntax</b></p>
+      <p>CSS is a rule-based language — you define the rules by specifying groups of styles that should be applied to particular elements or groups of elements on your web page.</p>
+      
+      <code>body { color: #333; }</code>
+      <ul>
+        <li>In the above example, the CSS rule opens with a selector. This selects the HTML element that we are going to style. In this case, we are styling level one headings (h1).</li>
+        <li>We then have a set of curly braces { }.</li>
+        <li>Inside the braces will be one or more declarations, which take the form of property and value pairs. We specify the property (color in the above example) before the colon, and we specify the value of the property after the colon (red in this example).</li>
+        <li>This example contains two declarations, one for color and the other for font-size. Each pair specifies a property of the element(s) we are selecting (h1 in this case), then a value that we'd like to give the property.</li>
+      </ul>
+
+      <p><b>CSS modules</b></p>
+      <p>As there are so many things that you could style using CSS, the language is broken down into modules. You'll see reference to these modules as you explore MDN. Many of the documentation pages are organized around a particular module. For example, you could take a look at the MDN reference to the Backgrounds and Borders module to find out what its purpose is and the properties and features it contains. In that module, you will also find a link to Specifications that defines the technology (also see the section below).</p>
+      <p>At this stage, you don't need to worry too much about how CSS is structured; however, it can make it easier to find information if, for example, you are aware that a certain property is likely to be found among other similar things, and is therefore, probably in the same specification.</p>
+      <p>For a specific example, let's go back to the Backgrounds and Borders module — you might think that it makes logical sense for the background-color and border-color properties to be defined in this module. And you'd be right.</p>
+      <p><b>CSS specifications</b></p>
+      <p>All web standards technologies (HTML, CSS, JavaScript, etc.) are defined in giant documents called specifications (or "specs"), which are published by standards organizations (such as the W3C, WHATWG, ECMA, or Khronos) and define precisely how those technologies are supposed to behave.</p>
+      <p>CSS is no different — it is developed by a group within the W3C called the CSS Working Group. This group is made of representatives of browser vendors and other companies who have an interest in CSS. There are also other people, known as invited experts, who act as independent voices; they are not linked to a member organization.</p>
+      <p>New CSS features are developed or specified by the CSS Working Group — sometimes because a particular browser is interested in having some capability, other times because web designers and developers are asking for a feature, and sometimes because the Working Group itself has identified a requirement. CSS is constantly developing, with new features becoming available. However, a key thing about CSS is that everyone works very hard to never change things in a way that would break old websites. A website built in 2000, using the limited CSS available then, should still be usable in a browser today!</p>
+
+    </section>
+    <section class="main-section" id="Responsive_Design">
+      <header class="header">Responsive Design</header>
+      <p>New CSS features are developed or specified by the CSS Working Group — sometimes because a particular browser is interested in having some capability, other times because web designers and developers are asking for a feature, and sometimes because the Working Group itself has identified a requirement. CSS is constantly developing, with new features becoming available. However, a key thing about CSS is that everyone works very hard to never change things in a way that would break old websites. A website built in 2000, using the limited CSS available then, should still be usable in a browser today!</p>
+      <p>The practice consists of a mix of flexible grids and layouts, images and an intelligent use of CSS media queries. As the user switches from their laptop to iPad, the website should automatically switch to accommodate for resolution, image size and scripting abilities. One may also have to consider the settings on their devices; if they have a VPN for iOS on their iPad, for example, the website should not block the user’s access to the page. In other words, the website should have the technology to automatically respond to the user’s preferences. This would eliminate the need for a different design and development phase for each new gadget on the market.</p>
+      <p>Responsive design is achieved through media queries and flexible layout techniques.</p>
+      <code>@media screen and (max-width: 768px) { /* CSS rules for small screens */ }</code>
+      <p><b>The Concept Of Responsive Web Design </b></p>
+      <p>Transplant this discipline onto Web design, and we have a similar yet whole new idea. Why should we create a custom Web design for each group of users; after all, architects don’t design a building for each group size and type that passes through it? Like responsive architecture, Web design should automatically adjust. It shouldn’t require countless custom-made solutions for each new category of users.</p>
+      <p>Obviously, we can’t use motion sensors and robotics to accomplish this the way a building would. Responsive Web design requires a more abstract way of thinking. However, some ideas are already being practiced: fluid layouts, media queries and scripts that can reformat Web pages and mark-up effortlessly (or automatically).</p>
+      <p>But responsive Web design is not only about adjustable screen resolutions and automatically resizable images, but rather about a whole new way of thinking about design. Let’s talk about all of these features, plus additional ideas in the making.</p>
+      
+
+    </section>
+    <section class="main-section" id="Media_Queries">
+      <header class="header">Media Queries</header>
+      <p>Media queries allow you to apply CSS styles depending on a device's general type (such as print vs. screen) or other characteristics such as screen resolution or browser viewport width. Media queries are used for the following:</p>
+      <p>Media queries are a CSS technique used to apply different styles based on the characteristics of the device or viewport.</p>
+      <p>They allow for customized styles for different devices, such as smartphones and tablets.</p>
+      <p>Media queries are key to creating responsive and adaptive web designs.</p>
+      <code>@media (orientation: landscape) { /* CSS rules for landscape orientation */ }</code>
+      <ul>
+        <li>To conditionally apply styles with the CSS @media and @import at-rules.</li>
+        <li>To target specific media for the &lt;style&gt;, &lt;link&gt;, &lt;source&gt;, and other <b>HTML</b> elements with the media= attribute.</li>
+        <li>To test and monitor media states using the Window.matchMedia() and EventTarget.addEventListener() methods.</li>
+      </ul>
+      <p><b>Syntax</b></p>
+      <p>A media query is composed of an optional media type and any number of media feature expressions, which may optionally be combined in various ways using logical operators. Media queries are case-insensitive.</p>
+      <ul>
+        <li><b>Media types</b> define the broad category of device for which the media query applies: all, print, screen. The type is optional (assumed to be all) except when using the not or only logical operators.</li>
+        <li><b>Media features</b> describe a specific characteristic of the user agent, output device, or environment:
+        <li>any-hover</li>
+        <li>any-pointer</li>
+        <li>aspect-ratio</li>
+        <li>color</li>
+        <li>color-gamut</li>
+        <li>color-index</li>
+        <li>device-aspect-ratio</li>
+        <li>device-height</li>
+        <li>device-width</li>
+        <li>display-mode</li>
+        <li>forced-colors</li>
+        <li>dynamic-range</li>
+        <li>grid</li>
+        <li>height</li>
+        <li>hover</li>
+        <li>inverted-colors</li>
+        <li>monochrome</li>
+        <li>orientation</li>
+        <li>overflow-block</li>
+        <li>overflow-inline</li>
+          <li>pointer</li>
+          <li>prefers-color-scheme</li>
+          <li>prefers-contrast</li>
+          <li>prefers-reduced-motion</li>
+          <li>prefers-reduced-transparency</li>
+          <li>resolution</li>
+          <li>scripting</li>
+          <li>update</li>
+          <li>video-dynamic-range</li>
+          <li>width</li>
+          <li>For example, the <b>hover</b> feature allows a query to test against whether the device supports hovering over elements. Media feature expressions test for their presence or value, and are entirely optional. Each media feature expression must be surrounded by parentheses.</li>
+          <li><b>Logical operators</b> can be used to compose a complex media query: not, and, and only. You can also combine multiple media queries into a single rule by separating them with commas.</li>
+        </li>
+      </ul>
+      <p><b>Targeting media types</b></p>
+      <p>Media types describe the general category of a given device. Although websites are commonly designed with screens in mind, you may want to create styles that target special devices such as printers or audio-based screen readers. For example, this CSS targets printers:</p>
+      <code>@media print {
+        /* … */
+      }</code>
+      <p>You can also target multiple devices. For instance, this @media rule uses two media queries to target both screen and print devices:</p>
+      <code>@media screen, print {
+        /* … */
+      }</code>
+      <p><b>Targeting media features</b></p>
+      <p>Media features describe the specific characteristics of a given user agent, output device, or environment. For instance, you can apply specific styles to widescreen monitors, computers that use mice, or to devices that are being used in low-light conditions. This example applies styles when the user's primary input mechanism (such as a mouse) can hover over elements:</p>
+      <code>@media (hover: hover) {
+        /* … */
+      }</code>
+      <p>Many media features are range features, which means they can be prefixed with "min-" or "max-" to express "minimum condition" or "maximum condition" constraints. For example, this CSS will apply styles only if your browser's viewport width is equal to or narrower than 1250px:</p>
+      <code>@media (max-width: 1250px) {
+        /* … */
+      }</code>
+      <p>If you create a media feature query without specifying a value, the nested styles will be used as long as the feature's value is not zero (or none, in Level 4). For example, this CSS will apply to any device with a color screen:</p>
+      <code>@media (color) {
+        /* … */
+      }</code>
+      <p>If a feature doesn't apply to the device on which the browser is running, expressions involving that media feature are always false.</p>
+      <p><b>Creating complex media queries</b></p>
+      <p>Sometimes you may want to create a media query that depends on multiple conditions. This is where the logical operators come in: not, and, and only. Furthermore, you can combine multiple media queries into a comma-separated list; this allows you to apply the same styles in different situations.</p>
+      <p>In the previous example, we've already seen the and operator used to group a media type with a media feature. The and operator can also combine multiple media features into a single media query. The not operator, meanwhile, negates a media query, basically reversing its normal meaning. The only operator prevents older browsers from applying the styles.</p>
+      <p>Creating complex media queries</p>
+      <p>The and keyword combines a media feature with a media type or other media features. This example combines two media features to restrict styles to landscape-oriented devices with a width of at least 30 ems:</p>
+      <code>@media (min-width: 30em) and (orientation: landscape) {
+        /* … */
+      }</code>
+      <p>To limit the styles to devices with a screen, you can chain the media features to the screen media type:</p>
+        <code>@media screen and (min-width: 30em) and (orientation: landscape) {
+          /* … */
+        }</code>
+
+
+
+    </section>
+  </main>
+</body>
+</html>

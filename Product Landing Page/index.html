@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <title>Product Landing Page</title>
+</head>
+<body>
+    <header id="header"><h1 class="h">AndroidPhones.com</h1>
+        <img id="header-img" src="https://www.freepnglogos.com/uploads/android-logo-png/android-logo-0.png" alt="Product Logo" > 
+        <nav id="nav-bar">
+            <a href="#features" class="nav-link">Features</a>
+            <a href="#pricing" class="nav-link">Pricing</a>
+            <a href="#contact" class="nav-link">Contact</a>
+        </nav>
+    </header>
+<br>
+    <main>
+        <section id="hero">
+            <h1>Welcome to AndroidPhones</h1>
+            <p>Your solution for a better life.</p>
+            <a href="#pricing" class="hero-button">Get Started</a>
+        </section>
+
+        <section id="features">
+            <h2>Features</h2>
+            <div class="feature">
+                <i class="fas fa-check-circle"></i>
+                <p>High-resolution Retina display</p>
+            </div>
+            <div class="feature">
+                <i class="fas fa-check-circle"></i>
+                <p>Powerful quad-core processor</p>
+            </div>
+            <div class="feature">
+                <i class="fas fa-check-circle"></i>
+                <p>Advanced camera with image stabilization</p>
+            </div>
+            <div class="feature">
+                <i class="fas fa-check-circle"></i>
+                <p>Long-lasting battery life</p><br>
+            </div>
+        </section>
+
+        <section id="video-frame">
+            <h2>Product Video</h2>
+            <iframe style="margin-left: auto; margin-right: auto; display: block;" id="video" width="560" height="315" src="https://www.youtube.com/embed/2i-8cYx-mJ4" title="Product Video" frameborder="0" allowfullscreen></iframe>
+        </section> 
+<br>
+        <section id="pricing">
+            <h2>Pricing</h2>
+            <div class="pricing-card">
+                <h3>Standard Plan</h3>
+                <p>Get access to all features</p>
+                <p>24/7 customer support</p>
+                <p>30-day money-back guarantee</p>
+                <span class="price">$99/month</span>
+                <a href="#" class="buy-button">Buy Now</a>
+            </div>
+
+            <div class="pricing-card">
+                <h3>Premium Plan</h3>
+                <p>Everything in the Standard Plan</p>
+                <p>Advanced analytics and reporting</p>
+                <p>Priority customer support</p>
+                <span class="price">$149/month</span>
+                <a href="#" class="buy-button">Buy Now</a>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>If you have any questions or need assistance, please contact us:</p>
+            <address>
+                <p>Email: <a href="mailto:info@example.com">AndroidPhones@gmail.com</a></p>
+                <p>Phone: <a href="tel:+1234567890">+1 (234) 567-890</a></p>
+            </address>
+            <form id="form" action="https://www.freecodecamp.com/email-submit" method="post">
+                <input type="email" id="email" placeholder="Enter your email" name="email" required>
+                <input type="submit" id="submit" value="Submit">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Product Landing Page</p>
+    </footer>
+</body>
+</html>
