@@ -5,17 +5,21 @@
 }
 
 
-.h{text-align: left;
+.h{text-align: center;
 font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
+    background-image:linear-gradient(to bottom, rgba(250, 224, 108, 0.52), rgba(225, 230, 185, 0.73)),url("Strawberry.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: cover;
 }
 #hero {
     background: url('background-image.jpg') center/cover no-repeat;
     text-align: center;
-    padding: 100px 0;
+    padding-top: 15em;
+    padding-bottom: 20px;
     color: #fff;
 }
  
@@ -41,20 +45,27 @@ body {
     margin: 10px 0;
 }
 
+.feature p{font-size: 2em;}
+
 .feature i {
     margin-right: 10px;
-    color: #333;
+    color: #1ae000;
     font-size: 24px;
 }
 
 .pricing-card {
-    background-image: linear-gradient(to bottom right, rgb(0, 0, 0), rgb(189, 189, 189));
-    color: white;
-    border: 1px solid #ddd;
-    padding: 20px;
+    background-image: linear-gradient(to bottom right, rgb(245, 218, 178), rgb(253, 253, 253));
+    color: black;
     border-radius: 5px;
     margin: 10px;
     text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: calc(100% / 3);
+    border: 1px solid #000;
+
 }
 
 .price {
@@ -66,21 +77,18 @@ body {
     font-size: 18px;
 }
 
+#pricing{display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 100px;}
+
 address a {
     color: #333;
     text-decoration: none;
     margin-left: 10px;
     font-weight: bold;
 }
-.pricing-card {
-    background-color: #fff;
-    color: white;
-    border: 1px solid #ddd;
-    padding: 20px;
-    border-radius: 15px;
-    margin: 0 500px;
-    text-align: center;
-}
+
 
 .buy-button {
     background-color: #333;
@@ -90,16 +98,17 @@ address a {
     border-radius: 5px;
     display: block;
     margin: 10px auto;
+    margin-top: 50px;
 }
 
 #header {
-    background-image: linear-gradient(to bottom right, rgb(0, 0, 0), rgb(189, 189, 189));
-    color: #fff;
+    background-image: linear-gradient(to bottom right, rgb(245, 218, 178), rgb(253, 253, 253));
+    color: #000000;
     padding: 20px;
     text-align: center;
     position: fixed;
     width: 100%;
-    border-radius: 20px;
+    border-bottom: #000000 double 5px;
 }
 
 #header-img {
@@ -111,16 +120,16 @@ address a {
 }
 
 .nav-link {
-    color: #fff;
+    color: #000000;
     text-decoration: none;
     margin: 0 20px;
     font-size: 25px;
 }
 
-.nav-link:hover{color: black;}
+.nav-link:hover{color: rgb(243, 54, 86);}
 
 main {
-    padding: 80px 0;
+    padding: 0;
 }
 
 h2 {
@@ -149,7 +158,9 @@ form {
 }
 
 #contact{border-top: 5px double black;
-margin-top: 50PX;}
+margin-top: 50PX;
+text-align: center;
+background-image: linear-gradient(to bottom right, rgb(245, 218, 178), rgb(253, 253, 253));}
 
 footer {
     background-color: #333;
